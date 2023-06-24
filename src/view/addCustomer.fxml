@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="454.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomer">
+   <children>
+    <Button fx:id="saveCustomerBtn" layoutX="474.0" layoutY="406.0" mnemonicParsing="false" onAction="#onActionSaveCustomer" text="Save" />
+      <Button fx:id="cancelBtn" layoutX="533.0" layoutY="406.0" mnemonicParsing="false" onAction="#onActionCancel" text="Cancel" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="174.0" text="Add Customer">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="21.0" layoutY="105.0" prefHeight="280.0" prefWidth="512.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Name:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label text="Address:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label text="State:" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label text="Country:" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label text="Postal Code:" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label text="Phone:" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="nameTxtFld" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="addressTxtFld" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="postalCodeTxtFld" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="phoneTxtFld" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ComboBox fx:id="cityComboBox" onAction="#onActionCityComboBox" prefWidth="150.0" promptText="Select a State" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Customer ID:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="customerIdTextFld" disable="true" editable="false" promptText="Auto-Generated" GridPane.columnIndex="1" />
+            <ComboBox fx:id="countryComboBox" onAction="#onActionCountryComboBox" prefWidth="150.0" promptText="Select a Country" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Label layoutX="14.0" layoutY="44.0" text="Add customer by filling out fields below" />
+   </children>
+</AnchorPane>

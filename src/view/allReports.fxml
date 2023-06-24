@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="553.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AllReports">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="366.0" layoutY="28.0" text="Reports" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="76.0" prefHeight="17.0" prefWidth="676.0" text="Number of appointments by month and type">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="filterReportsBtn" layoutX="28.0" layoutY="211.0" prefHeight="17.0" prefWidth="156.0" text="Schedule of each contact:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="476.0" prefHeight="17.0" prefWidth="676.0" text="Total number of appointments per Customer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="mainMenuBtn" layoutX="767.0" layoutY="515.0" mnemonicParsing="false" onAction="#onActionMainMenu" text="Main Menu" />
+      <ComboBox fx:id="monthCombo" layoutX="98.0" layoutY="115.0" prefHeight="25.0" prefWidth="178.0" promptText="Please select a month" />
+      <ComboBox fx:id="typeCombo" layoutX="372.0" layoutY="115.0" prefHeight="25.0" prefWidth="195.0" promptText="Please select a type" />
+      <Label layoutX="43.0" layoutY="169.0" prefHeight="17.0" prefWidth="246.0" text="Number of appointments by month and type:" />
+      <TableView fx:id="scheduleOfEachContactTblView" layoutX="5.0" layoutY="241.0" prefHeight="215.0" prefWidth="864.0">
+        <columns>
+          <TableColumn fx:id="appointmentIdTblCol" prefWidth="102.0" text="Appointment ID" />
+          <TableColumn fx:id="titleTblCol" prefWidth="67.0" text="Title" />
+            <TableColumn fx:id="descriptionTblCol" prefWidth="96.0" text="Description" />
+            <TableColumn fx:id="locationTblCol" prefWidth="71.0" text="Location" />
+            <TableColumn fx:id="typeTblCol" prefWidth="50.0" text="Type" />
+            <TableColumn fx:id="contactTblCol" prefWidth="74.0" text="Contact" />
+            <TableColumn fx:id="startTblCol" prefWidth="125.0" text="Start" />
+            <TableColumn fx:id="endTblCol" prefWidth="129.0" text="End" />
+            <TableColumn fx:id="customerIdTblCol" prefWidth="90.0" text="Customer ID" />
+            <TableColumn fx:id="userIdTblCol" prefWidth="59.0" text="User ID" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="customerComboBox" layoutX="121.0" layoutY="506.0" onAction="#onActionCustomerComboBox" prefHeight="25.0" prefWidth="211.0" promptText="Please select a Customer" />
+      <Label layoutX="43.0" layoutY="119.0" text="Month:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="119.0" text="Type:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="510.0" text="Customer:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="511.0" text="Total Appointments:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="appointmentCountSearchBtn" layoutX="622.0" layoutY="115.0" mnemonicParsing="false" onAction="#onActionSearchNumberOfAppointments" text="Search" />
+      <ComboBox fx:id="contactCombo" layoutX="184.0" layoutY="207.0" onAction="#onActionContactAppointmentTable" prefHeight="25.0" prefWidth="169.0" promptText="Please select a contact" />
+      <Label fx:id="totalNumberByMonthAndType" layoutX="299.0" layoutY="165.0" prefHeight="25.0" prefWidth="19.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalAppointmentsByCustomer" layoutX="501.0" layoutY="507.0" prefHeight="25.0" prefWidth="19.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

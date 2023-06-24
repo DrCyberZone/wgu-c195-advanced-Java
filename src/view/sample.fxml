@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="324.0" prefWidth="595.0">
+         <children>
+            <VBox layoutX="204.0" layoutY="106.0" prefHeight="113.0" prefWidth="188.0">
+               <children>
+                  <TextField fx:id="usernameTxtField" prefHeight="25.0" prefWidth="157.0" promptText="Enter username">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="passwordTxtField" promptText="Enter Password">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin></PasswordField>
+               </children></VBox>
+            <Label fx:id="usernameLabel" alignment="CENTER_RIGHT" layoutX="4.0" layoutY="106.0" prefHeight="25.0" prefWidth="188.0" text="Username:" />
+            <Label fx:id="passwordLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="3.0" layoutY="162.0" prefHeight="25.0" prefWidth="195.0" text="Password:" textAlignment="RIGHT" />
+            <Label layoutX="439.0" layoutY="12.0" text="Zone:" />
+            <Label fx:id="zoneID" layoutX="477.0" layoutY="12.0" text="USA" />
+            <Button fx:id="loginButton" defaultButton="true" layoutX="454.0" layoutY="276.0" mnemonicParsing="false" onAction="#onActionLogin" prefHeight="25.0" prefWidth="53.0" text="Login" />
+            <Button fx:id="exitBtn" layoutX="537.0" layoutY="276.0" mnemonicParsing="false" onAction="#onActionExit" text="Exit" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

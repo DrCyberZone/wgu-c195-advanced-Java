@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomersTable">
+   <children>
+      <TableView fx:id="customersTblView" layoutX="34.0" layoutY="67.0" prefHeight="398.0" prefWidth="835.0">
+        <columns>
+          <TableColumn fx:id="customersTblID" prefWidth="6.0" text="ID" />
+          <TableColumn fx:id="customersTblName" prefWidth="150.0" text="Name" />
+            <TableColumn fx:id="customersTblAddress" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="customersTblCity" prefWidth="75.0" text="City" />
+            <TableColumn fx:id="customersTblCountry" prefWidth="75.0" text="Country" />
+            <TableColumn fx:id="customersTblPostalCode" prefWidth="75.0" text="Postal Code" />
+            <TableColumn fx:id="customersTblPhone" prefWidth="151.0" text="Phone Number" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="34.0" layoutY="26.0" prefHeight="19.0" prefWidth="170.0" text="Customers Table">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="addBtn" layoutX="34.0" layoutY="519.0" mnemonicParsing="false" onAction="#onActionAdd" text="Add" />
+      <Button fx:id="modifyBtn" layoutX="92.0" layoutY="519.0" mnemonicParsing="false" onAction="#onActionModify" text="Modify" />
+      <Button fx:id="deleteBtn" layoutX="164.0" layoutY="519.0" mnemonicParsing="false" onAction="#onActionDelete" text="Delete" />
+      <Button fx:id="mainMenuBtn" layoutX="766.0" layoutY="519.0" mnemonicParsing="false" onAction="#onActionMainMenu" text="Main Menu" />
+      <Label layoutX="14.0" layoutY="485.0" text="Select from below to update customers table" />
+      <Label layoutX="754.0" layoutY="485.0" text="Back to main menu" />
+      <Label layoutX="252.0" layoutY="33.0" text="Shows the records of all customers in the database" />
+   </children>
+</Pane>
