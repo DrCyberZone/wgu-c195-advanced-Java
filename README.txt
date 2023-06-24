@@ -1,11 +1,11 @@
 Title: Scheduling Program
 
-Purpose: Schedule appointments for various customers. The purpose of this java app is to allow users to manage customer appointments in different timezones and languages with an application GUI interface.
+Purpose: Schedule appointments for various customers. The purpose of this Java app is to allow users to manage customer appointments in different timezones and languages with an application GUI interface.
 Author: Seyed Hassanzadeh
 Contact Information: 
  Name: Seyed Hassanzadeh
  Email: shass40@wgu.edu
- Phone: 949-300-0913
+ Phone: 949-***-****
  Application Version: 1.0.0
  Date: 8/4/2022
 
@@ -31,6 +31,6 @@ Users can generate reports by clicking on the "Reports" button.
 
 Description:
 
-This app was designed for a company to perform the scheduling appointments tasks for their clients.
+This app was designed for a company to schedule appointments for their clients.
 Customers can schedule appointments and view and edit them using the GUI application. This app will remind the user of a position within the next 15 minutes.
-This app can also change the software's language depending on the user system language.
+This app can also change the software's language depending on the user's system language.
